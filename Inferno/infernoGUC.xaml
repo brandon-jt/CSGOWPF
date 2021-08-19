@@ -1,0 +1,218 @@
+﻿<UserControl x:Class="CSGOWPF.Inferno.infernoGUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:CSGOWPF.Inferno"
+             mc:Ignorable="d" 
+             d:DesignHeight="894" d:DesignWidth="1095">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1069*"/>
+            <ColumnDefinition Width="26*"/>
+        </Grid.ColumnDefinitions>
+        <Button Content="Back" HorizontalAlignment="Left" Margin="10,854,0,0" VerticalAlignment="Top" Width="100" Click="Button_Click_Back"/>
+        <TextBlock HorizontalAlignment="Left" Margin="350,10,0,0" TextWrapping="Wrap" Text="Inferno Grenades" VerticalAlignment="Top" Width="146" Height="30"/>
+        <Button Content="Callouts" HorizontalAlignment="Left" Margin="10,20,0,0" VerticalAlignment="Top" Width="100" Click="Button_Click"/>
+        <Image Source="InfernoClear.png" Margin="10,10,-165,10" RenderTransformOrigin="0.511,0.501" Grid.ColumnSpan="2"/>
+        <Button Content="Clear" HorizontalAlignment="Left" Margin="0,431" VerticalAlignment="Center" Width="100" Visibility="Hidden"/>
+
+        <Image x:Name="ImageHolder" HorizontalAlignment="Left" Height="364" Margin="10,99,0,0" VerticalAlignment="Top" Width="730"/>
+
+        <StackPanel Grid.ColumnSpan="2">
+            <ToggleButton x:Name="Smoke" Height="41" Margin="613,107,444,0" RenderTransformOrigin="0.809,0.459">
+                <ToggleButton.Template>
+                    <ControlTemplate TargetType="{x:Type ToggleButton}">
+                        <Image Source="/Inferno/Smokegrenadehud_csgo (1).png"/>
+                    </ControlTemplate>
+                </ToggleButton.Template>
+            </ToggleButton>
+            <Popup IsOpen="{Binding IsChecked, ElementName=Smoke}" StaysOpen="False" PlacementTarget="{Binding ElementName=ImageHolder}" Height="800" Width="1000">
+                <Image Source = "/Inferno/Smokes/Coffins.png"/>
+            </Popup>
+        </StackPanel>
+
+        <StackPanel Grid.ColumnSpan="2">
+            <ToggleButton x:Name="Smoke2" Height="41" Margin="853,465,204,0" RenderTransformOrigin="0.809,0.459">
+                <ToggleButton.Template>
+                    <ControlTemplate TargetType="{x:Type ToggleButton}">
+                        <Image Source="/Inferno/Smokegrenadehud_csgo (1).png"/>
+                    </ControlTemplate>
+                </ToggleButton.Template>
+            </ToggleButton>
+            <Popup IsOpen="{Binding IsChecked, ElementName=Smoke2}" StaysOpen="False" PlacementTarget="{Binding ElementName=ImageHolder}" Height="800" Width="1000">
+                <Image Source = "/Inferno/Smokes/Archway.png"/>
+            </Popup>
+        </StackPanel>
+
+        <StackPanel Grid.ColumnSpan="2">
+            <ToggleButton x:Name="Smoke3" Height="41" Margin="905,660,152,0" RenderTransformOrigin="0.809,0.459">
+                <ToggleButton.Template>
+                    <ControlTemplate TargetType="{x:Type ToggleButton}">
+                        <Image Source="/Inferno/Smokegrenadehud_csgo (1).png"/>
+                    </ControlTemplate>
+                </ToggleButton.Template>
+            </ToggleButton>
+            <Popup IsOpen="{Binding IsChecked, ElementName=Smoke3}" StaysOpen="False" PlacementTarget="{Binding ElementName=ImageHolder}" Height="800" Width="1000">
+                <Image Source = "/Inferno/Smokes/Balcony.png"/>
+            </Popup>
+        </StackPanel>
+
+        <StackPanel Grid.ColumnSpan="2">
+            <ToggleButton x:Name="Smoke4" Height="41" Margin="651,187,406,0" RenderTransformOrigin="0.809,0.459">
+                <ToggleButton.Template>
+                    <ControlTemplate TargetType="{x:Type ToggleButton}">
+                        <Image Source="/Inferno/Smokegrenadehud_csgo (1).png"/>
+                    </ControlTemplate>
+                </ToggleButton.Template>
+            </ToggleButton>
+            <Popup IsOpen="{Binding IsChecked, ElementName=Smoke4}" StaysOpen="False" PlacementTarget="{Binding ElementName=ImageHolder}" Height="800" Width="1000">
+                <Image Source = "/Inferno/Smokes/BSite.png"/>
+            </Popup>
+        </StackPanel>
+
+        <StackPanel Grid.ColumnSpan="2">
+            <ToggleButton x:Name="Smoke5" Height="41" Margin="626,65,431,0" RenderTransformOrigin="0.809,0.459">
+                <ToggleButton.Template>
+                    <ControlTemplate TargetType="{x:Type ToggleButton}">
+                        <Image Source="/Inferno/Smokegrenadehud_csgo (1).png"/>
+                    </ControlTemplate>
+                </ToggleButton.Template>
+            </ToggleButton>
+            <Popup IsOpen="{Binding IsChecked, ElementName=Smoke5}" StaysOpen="False" PlacementTarget="{Binding ElementName=ImageHolder}" Height="800" Width="1000">
+                <Image Source = "/Inferno/Smokes/Construction.png"/>
+            </Popup>
+        </StackPanel>
+
+        <StackPanel Grid.ColumnSpan="2">
+            <ToggleButton x:Name="Smoke6" Height="41" Margin="754,570,303,0" RenderTransformOrigin="0.809,0.459">
+                <ToggleButton.Template>
+                    <ControlTemplate TargetType="{x:Type ToggleButton}">
+                        <Image Source="/Inferno/Smokegrenadehud_csgo (1).png"/>
+                    </ControlTemplate>
+                </ToggleButton.Template>
+            </ToggleButton>
+            <Popup IsOpen="{Binding IsChecked, ElementName=Smoke6}" StaysOpen="False" PlacementTarget="{Binding ElementName=ImageHolder}" Height="800" Width="1000">
+                <Image Source = "/Inferno/Smokes/Cross.png"/>
+            </Popup>
+        </StackPanel>
+
+        <StackPanel Grid.ColumnSpan="2">
+            <ToggleButton x:Name="Smoke7" Height="41" Margin="754,180,303,0" RenderTransformOrigin="0.809,0.459">
+                <ToggleButton.Template>
+                    <ControlTemplate TargetType="{x:Type ToggleButton}">
+                        <Image Source="/Inferno/Smokegrenadehud_csgo (1).png"/>
+                    </ControlTemplate>
+                </ToggleButton.Template>
+            </ToggleButton>
+            <Popup IsOpen="{Binding IsChecked, ElementName=Smoke7}" StaysOpen="False" PlacementTarget="{Binding ElementName=ImageHolder}" Height="800" Width="1000">
+                <Image Source = "/Inferno/Smokes/CT.png"/>
+            </Popup>
+        </StackPanel>
+
+        <StackPanel Grid.ColumnSpan="2">
+            <ToggleButton x:Name="Smoke8" Height="41" Margin="936,509,121,0" RenderTransformOrigin="0.809,0.459">
+                <ToggleButton.Template>
+                    <ControlTemplate TargetType="{x:Type ToggleButton}">
+                        <Image Source="/Inferno/Smokegrenadehud_csgo (1).png"/>
+                    </ControlTemplate>
+                </ToggleButton.Template>
+            </ToggleButton>
+            <Popup IsOpen="{Binding IsChecked, ElementName=Smoke8}" StaysOpen="False" PlacementTarget="{Binding ElementName=ImageHolder}" Height="800" Width="1000">
+                <Image Source = "/Inferno/Smokes/Deep Long.png"/>
+            </Popup>
+        </StackPanel>
+
+        <StackPanel Grid.ColumnSpan="2">
+            <ToggleButton x:Name="Smoke9" Height="41" Margin="555,483,502,0" RenderTransformOrigin="0.809,0.459">
+                <ToggleButton.Template>
+                    <ControlTemplate TargetType="{x:Type ToggleButton}">
+                        <Image Source="/Inferno/Smokegrenadehud_csgo (1).png"/>
+                    </ControlTemplate>
+                </ToggleButton.Template>
+            </ToggleButton>
+            <Popup IsOpen="{Binding IsChecked, ElementName=Smoke9}" StaysOpen="False" PlacementTarget="{Binding ElementName=ImageHolder}" Height="800" Width="1000">
+                <Image Source = "/Inferno/Smokes/DeepBanana.png"/>
+            </Popup>
+        </StackPanel>
+
+        <StackPanel Grid.ColumnSpan="2">
+            <ToggleButton x:Name="Smoke10" Height="41" Margin="589,340,468,0" RenderTransformOrigin="0.809,0.459">
+                <ToggleButton.Template>
+                    <ControlTemplate TargetType="{x:Type ToggleButton}">
+                        <Image Source="/Inferno/Smokegrenadehud_csgo (1).png"/>
+                    </ControlTemplate>
+                </ToggleButton.Template>
+            </ToggleButton>
+            <Popup IsOpen="{Binding IsChecked, ElementName=Smoke10}" StaysOpen="False" PlacementTarget="{Binding ElementName=ImageHolder}" Height="800" Width="1000">
+                <Image Source = "/Inferno/Smokes/FastBanana.png"/>
+            </Popup>
+        </StackPanel>
+
+        <StackPanel Grid.ColumnSpan="2">
+            <ToggleButton x:Name="Smoke11" Height="41" Margin="957,680,100,0" RenderTransformOrigin="0.809,0.459">
+                <ToggleButton.Template>
+                    <ControlTemplate TargetType="{x:Type ToggleButton}">
+                        <Image Source="/Inferno/Smokegrenadehud_csgo (1).png"/>
+                    </ControlTemplate>
+                </ToggleButton.Template>
+            </ToggleButton>
+            <Popup IsOpen="{Binding IsChecked, ElementName=Smoke11}" StaysOpen="False" PlacementTarget="{Binding ElementName=ImageHolder}" Height="800" Width="1000">
+                <Image Source = "/Inferno/Smokes/Front Pit.png"/>
+            </Popup>
+        </StackPanel>
+
+        <StackPanel Grid.ColumnSpan="2">
+            <ToggleButton x:Name="Smoke12" Height="41" Margin="957,465,100,0" RenderTransformOrigin="0.809,0.459">
+                <ToggleButton.Template>
+                    <ControlTemplate TargetType="{x:Type ToggleButton}">
+                        <Image Source="/Inferno/Smokegrenadehud_csgo (1).png"/>
+                    </ControlTemplate>
+                </ToggleButton.Template>
+            </ToggleButton>
+            <Popup IsOpen="{Binding IsChecked, ElementName=Smoke12}" StaysOpen="False" PlacementTarget="{Binding ElementName=ImageHolder}" Height="800" Width="1000">
+                <Image Source = "/Inferno/Smokes/Library.png"/>
+            </Popup>
+        </StackPanel>
+
+        <StackPanel Grid.ColumnSpan="2">
+            <ToggleButton x:Name="Smoke13" Height="41" Margin="789,465,268,0" RenderTransformOrigin="0.809,0.459">
+                <ToggleButton.Template>
+                    <ControlTemplate TargetType="{x:Type ToggleButton}">
+                        <Image Source="/Inferno/Smokegrenadehud_csgo (1).png"/>
+                    </ControlTemplate>
+                </ToggleButton.Template>
+            </ToggleButton>
+            <Popup IsOpen="{Binding IsChecked, ElementName=Smoke13}" StaysOpen="False" PlacementTarget="{Binding ElementName=ImageHolder}" Height="800" Width="1000">
+                <Image Source = "/Inferno/Smokes/Long.png"/>
+            </Popup>
+        </StackPanel>
+
+        <StackPanel Grid.ColumnSpan="2">
+            <ToggleButton x:Name="Smoke14" Height="41" Margin="972,585,85,0" RenderTransformOrigin="0.809,0.459">
+                <ToggleButton.Template>
+                    <ControlTemplate TargetType="{x:Type ToggleButton}">
+                        <Image Source="/Inferno/Smokegrenadehud_csgo (1).png"/>
+                    </ControlTemplate>
+                </ToggleButton.Template>
+            </ToggleButton>
+            <Popup IsOpen="{Binding IsChecked, ElementName=Smoke14}" StaysOpen="False" PlacementTarget="{Binding ElementName=ImageHolder}" Height="800" Width="1000">
+                <Image Source = "/Inferno/Smokes/MiniPit (2).png"/>
+            </Popup>
+        </StackPanel>
+
+        <StackPanel Grid.ColumnSpan="2">
+            <ToggleButton x:Name="Smoke15" Height="41" Margin="784,630,273,0" RenderTransformOrigin="0.809,0.459">
+                <ToggleButton.Template>
+                    <ControlTemplate TargetType="{x:Type ToggleButton}">
+                        <Image Source="/Inferno/Smokegrenadehud_csgo (1).png"/>
+                    </ControlTemplate>
+                </ToggleButton.Template>
+            </ToggleButton>
+            <Popup IsOpen="{Binding IsChecked, ElementName=Smoke15}" StaysOpen="False" PlacementTarget="{Binding ElementName=ImageHolder}" Height="800" Width="1000">
+                <Image Source = "/Inferno/Smokes/Short.png"/>
+            </Popup>
+        </StackPanel>
+
+    </Grid>
+</UserControl>

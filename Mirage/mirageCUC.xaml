@@ -1,0 +1,49 @@
+﻿<UserControl x:Class="CSGOWPF.mirageCUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:CSGOWPF"
+             mc:Ignorable="d" Height="894" Width="1095">
+    <Grid>
+        <Button Content="Back" HorizontalAlignment="Left" Margin="10,854,0,0" VerticalAlignment="Top" Width="100" Click="Button_Click"/>
+        <TextBlock HorizontalAlignment="Left" Margin="350,10,0,0" TextWrapping="Wrap" Text="Mirage Callouts" VerticalAlignment="Top" Width="146" Height="30"/>
+        <Button Content="Grenades" HorizontalAlignment="Left" Margin="10,20,0,0" VerticalAlignment="Top" Width="100" Click="Button_Click_1" />
+        <Image Source="MirageMap.jpg" Margin="10,10,-165,10" RenderTransformOrigin="0.511,0.501"/>
+        <TextBlock HorizontalAlignment="Left" Height="26" Margin="813,686,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="102" FontSize="18" Text="PALACE" Foreground="White" FontFamily="Arial Rounded MT Bold" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Height="29" Margin="724,543,0,0" TextWrapping="Wrap" Text="TETRIS" VerticalAlignment="Top" Width="72" FontSize="14"  Foreground="White" FontFamily="Arial Rounded MT Bold" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Height="23" Margin="647,364,0,0" TextWrapping="Wrap" Text="SHORT" VerticalAlignment="Top" Width="113" Foreground="White" FontFamily="Arial Rounded MT Bold" FontSize="18"/>
+        <TextBlock HorizontalAlignment="Left" Height="30" Margin="590,260,0,0" TextWrapping="Wrap" Text="CAT" VerticalAlignment="Top" Width="74" Foreground="White" FontFamily="Arial Rounded MT Bold" FontSize="18"/>
+        <TextBlock HorizontalAlignment="Left" Height="113" Margin="628,429,0,0" TextWrapping="Wrap" Text="CONNECTOR" VerticalAlignment="Top" Width="13" Foreground="White" FontFamily="Arial Rounded MT Bold" FontWeight="Bold" FontSize="11"/>
+        <TextBlock HorizontalAlignment="Left" Height="35" Margin="350,387,0,0" TextWrapping="Wrap" Text="KITCHEN" VerticalAlignment="Top" Width="122" Foreground="White" FontFamily="Arial Rounded MT Bold" FontWeight="Bold" FontSize="18"/>
+        <TextBlock HorizontalAlignment="Left" Height="92" Margin="302,198,0,0" TextWrapping="Wrap" Text="BENCH" VerticalAlignment="Top" Width="19" Foreground="White" FontFamily="Arial Rounded MT Bold" FontWeight="Bold" FontSize="16"/>
+        <TextBlock HorizontalAlignment="Left" Height="37" Margin="422,163,0,0" TextWrapping="Wrap" Text="APARTMENTS" VerticalAlignment="Top" Width="142" Foreground="White" FontFamily="Arial Rounded MT Bold" FontWeight="Bold" FontSize="18" RenderTransformOrigin="0.486,0.676"/>
+        <TextBlock HorizontalAlignment="Left" Height="24" Margin="590,220,0,0" TextWrapping="Wrap" Text="B STAIRS" VerticalAlignment="Top" Width="118" Foreground="White" FontFamily="Arial Rounded MT Bold" FontWeight="Bold" FontSize="18"/>
+        <TextBlock HorizontalAlignment="Left" Height="169" Margin="569,229,0,0" TextWrapping="Wrap" Text="UNDERPASS" VerticalAlignment="Top" Width="21" Foreground="White" FontFamily="Arial Rounded MT Bold" FontWeight="Bold" FontSize="16"/>
+        <TextBlock HorizontalAlignment="Left" Height="30" Margin="831,154,0,0" TextWrapping="Wrap" Text="TV" VerticalAlignment="Top" Width="74" Foreground="White" FontFamily="Arial Rounded MT Bold" FontSize="18"/>
+        <TextBlock HorizontalAlignment="Left" Height="30" Margin="769,405,0,0" TextWrapping="Wrap" Text="BOXES" VerticalAlignment="Top" Width="74" Foreground="White" FontFamily="Arial Rounded MT Bold" FontSize="18" RenderTransformOrigin="-0.095,5.533"/>
+        <TextBlock HorizontalAlignment="Left" Height="23" Margin="528,542,0,0" TextWrapping="Wrap" Text="JUNGLE" VerticalAlignment="Top" Width="113" Foreground="White" FontFamily="Arial Rounded MT Bold" FontSize="18"/>
+        <TextBlock HorizontalAlignment="Left" Height="37" Margin="497,398,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="67" Foreground="White" FontFamily="Arial Rounded MT Bold" FontWeight="Bold" FontSize="18"><Run FontSize="14" Text="SNIPERS "/><Run FontSize="14" Text="NEST"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="103" Margin="545,284,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="10" Foreground="White" FontFamily="Arial Rounded MT Bold" FontWeight="Bold" FontSize="14" Text="LADDER"/>
+        <TextBlock HorizontalAlignment="Left" Height="103" Margin="881,495,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="10" Foreground="White" FontFamily="Arial Rounded MT Bold" FontWeight="Bold" FontSize="14"><Run Text="T"/><LineBreak/><Run/><LineBreak/><Run Text="ROOF"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="30" Margin="802,568,0,0" TextWrapping="Wrap" Text="T RAMP" VerticalAlignment="Top" Width="74" Foreground="White" FontFamily="Arial Rounded MT Bold" FontSize="18" RenderTransformOrigin="-0.095,5.533"/>
+        <TextBlock HorizontalAlignment="Left" Height="103" Margin="545,284,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="10" Foreground="White" FontFamily="Arial Rounded MT Bold" FontWeight="Bold" FontSize="14" Text="LADDER"/>
+        <TextBlock HorizontalAlignment="Left" Height="30" Margin="737,635,0,0" TextWrapping="Wrap" Text="BALCONY" VerticalAlignment="Top" Width="92" Foreground="White" FontFamily="Arial Rounded MT Bold" FontSize="14" RenderTransformOrigin="-0.095,5.533"/>
+        <TextBlock HorizontalAlignment="Left" Height="35" Margin="468,686,0,0" TextWrapping="Wrap" Text="CT STAIRS" VerticalAlignment="Top" Width="122" Foreground="White" FontFamily="Arial Rounded MT Bold" FontWeight="Bold" FontSize="18" RenderTransformOrigin="1.525,9.286"/>
+        <TextBlock HorizontalAlignment="Left" Height="30" Margin="325,167,0,0" TextWrapping="Wrap" Text="CAR" VerticalAlignment="Top" Width="74" Foreground="White" FontFamily="Arial Rounded MT Bold" FontSize="18"/>
+        <TextBlock HorizontalAlignment="Left" Height="37" Margin="776,350,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="67" Foreground="White" FontFamily="Arial Rounded MT Bold" FontWeight="Bold" FontSize="18"><Run FontSize="14" Text="TOP MID"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="37" Margin="682,446,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="67" Foreground="White" FontFamily="Arial Rounded MT Bold" FontWeight="Bold" FontSize="18"><Run FontSize="14" Text="CHAIR"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="37" Margin="380,337,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="67" Foreground="White" FontFamily="Arial Rounded MT Bold" FontWeight="Bold" FontSize="18"><Run FontSize="14" Text="WINDOW"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="37" Margin="468,337,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="67" Foreground="White" FontFamily="Arial Rounded MT Bold" FontWeight="Bold" FontSize="18"><Run FontSize="14" Text="E BOX"/><LineBreak/><Run FontSize="14"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="37" Margin="497,253,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="67" Foreground="White" FontFamily="Arial Rounded MT Bold" FontWeight="Bold" FontSize="18"><Run FontSize="14" Text="B SHORT"/><LineBreak/><Run FontSize="14"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="37" Margin="468,216,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="67" Foreground="White" FontFamily="Arial Rounded MT Bold" FontWeight="Bold" FontSize="18"><Run FontSize="14" Text="ARCHES"/><LineBreak/><Run FontSize="14"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="29" Margin="615,652,0,0" TextWrapping="Wrap" Text="TRIPLE" VerticalAlignment="Top" Width="72" FontSize="14"  Foreground="White" FontFamily="Arial Rounded MT Bold" FontWeight="Bold" RenderTransformOrigin="0.472,1.69"/>
+        <TextBlock HorizontalAlignment="Left" Height="29" Margin="704,692,0,0" TextWrapping="Wrap" Text="FIRE" VerticalAlignment="Top" Width="72" FontSize="14"  Foreground="White" FontFamily="Arial Rounded MT Bold" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Height="29" Margin="647,708,0,0" TextWrapping="Wrap" Text="NINJA" VerticalAlignment="Top" Width="72" FontSize="14"  Foreground="White" FontFamily="Arial Rounded MT Bold" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Height="29" Margin="677,652,0,0" TextWrapping="Wrap" Text="DANGER" VerticalAlignment="Top" Width="72" FontSize="14"  Foreground="White" FontFamily="Arial Rounded MT Bold" FontWeight="Bold" RenderTransformOrigin="1.403,1.069"/>
+        <TextBlock HorizontalAlignment="Left" Height="29" Margin="569,726,0,0" TextWrapping="Wrap" Text="TICKET" VerticalAlignment="Top" Width="72" FontSize="14"  Foreground="White" FontFamily="Arial Rounded MT Bold" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Height="91" Margin="664,495,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="9" Foreground="White" FontFamily="Arial Rounded MT Bold" FontWeight="Bold" FontSize="11"><Run Text=" "/><LineBreak/><Run Text="STAIRS"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="29" Margin="677,514,0,0" TextWrapping="Wrap" Text="SANDWICH" VerticalAlignment="Top" Width="83" FontSize="14"  Foreground="White" FontFamily="Arial Rounded MT Bold" FontWeight="Bold"/>
+
+    </Grid>
+</UserControl>

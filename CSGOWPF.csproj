@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7C23E076-2058-4E74-9ADF-3E828FD4A50C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CSGOWPF</RootNamespace>
+    <AssemblyName>CSGOWPF</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MaterialDesignColors, Version=2.0.1.2556, Culture=neutral, PublicKeyToken=df2a72020bd7962a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialDesignColors.2.0.1\lib\net452\MaterialDesignColors.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialDesignThemes.Wpf, Version=4.1.0.2556, Culture=neutral, PublicKeyToken=df2a72020bd7962a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialDesignThemes.4.1.0\lib\net452\MaterialDesignThemes.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Ancient\AncientCUC.xaml.cs">
+      <DependentUpon>AncientCUC.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Ancient\AncientGUC.xaml.cs">
+      <DependentUpon>AncientGUC.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Train\TrainCUC.xaml.cs">
+      <DependentUpon>TrainCUC.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Train\TrainGUC.xaml.cs">
+      <DependentUpon>TrainGUC.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vertigo\VertigoCUC.xaml.cs">
+      <DependentUpon>VertigoCUC.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vertigo\VertigoGUC.xaml.cs">
+      <DependentUpon>VertigoGUC.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Ancient\AncientCUC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Ancient\AncientGUC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Dust2\Dust2CUC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Dust2\Dust2GUC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Inferno\infernoCUC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Inferno\infernoGUC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dust2\Dust2CUC.xaml.cs">
+      <DependentUpon>Dust2CUC.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Dust2\Dust2GUC.xaml.cs">
+      <DependentUpon>Dust2GUC.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Inferno\infernoCUC.xaml.cs">
+      <DependentUpon>infernoCUC.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Inferno\infernoGUC.xaml.cs">
+      <DependentUpon>infernoGUC.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Mirage\mirageCUC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Mirage\mirageGUC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Nuke\NukeCUC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Nuke\NukeGUC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ResourceDictionary.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Train\TrainCUC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Train\TrainGUC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vertigo\VertigoCUC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vertigo\VertigoGUC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Mirage\mirageCUC.xaml.cs">
+      <DependentUpon>mirageCUC.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Mirage\mirageGUC.xaml.cs">
+      <DependentUpon>mirageGUC.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Nuke\NukeCUC.xaml.cs">
+      <DependentUpon>NukeCUC.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Nuke\NukeGUC.xaml.cs">
+      <DependentUpon>NukeGUC.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Mirage\MirageMap.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Mirage\ShortSmoke.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Mirage\Smokegrenadehud_csgo %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Dust2\Dust2Map.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Inferno\InfernoMap.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Nuke\NukeMap1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Nuke\NukeMap2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Inferno\InfernoClear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Ancient\AncientMap.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Ancient\AncientClear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Dust2\Dust2Clear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Vertigo\VertigoClear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Mirage\Smokes\A-Cross-cropped.png" />
+    <Resource Include="Mirage\Smokes\B-Apartments-cropped.png" />
+    <Resource Include="Mirage\Smokes\Balcony-cropped.png" />
+    <Resource Include="Mirage\Smokes\Catwalk-cropped.png" />
+    <Resource Include="Mirage\Smokes\CTSpawn-cropped.png" />
+    <Resource Include="Mirage\Smokes\CTSpawnTetris-cropped.png" />
+    <Resource Include="Mirage\Smokes\Jungle-cropped.png" />
+    <Resource Include="Mirage\Smokes\WindowCropped.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Mirage\Smokes\A-Ramp-Cropped.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Mirage\Smokes\Top-Connector-Cropped.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Mirage\Smokes\Top-Connector-mid-Cropped.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Inferno\Smokes\Coffins.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Inferno\Smokegrenadehud_csgo %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Inferno\Smokes\Archway.png" />
+    <Resource Include="Inferno\Smokes\Balcony.png" />
+    <Resource Include="Inferno\Smokes\BSite.png" />
+    <Resource Include="Inferno\Smokes\Construction.png" />
+    <Resource Include="Inferno\Smokes\Cross.png" />
+    <Resource Include="Inferno\Smokes\CT.png" />
+    <Resource Include="Inferno\Smokes\Deep Long.png" />
+    <Resource Include="Inferno\Smokes\Front Pit.png" />
+    <Resource Include="Inferno\Smokes\Library.png" />
+    <Resource Include="Inferno\Smokes\Long.png" />
+    <Resource Include="Inferno\Smokes\MiniPit %282%29.png" />
+    <Resource Include="Inferno\Smokes\Short.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Inferno\Smokes\DeepBanana.png" />
+    <Resource Include="Inferno\Smokes\FastBanana.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\MaterialDesignThemes.4.1.0\build\MaterialDesignThemes.targets" Condition="Exists('..\packages\MaterialDesignThemes.4.1.0\build\MaterialDesignThemes.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\MaterialDesignThemes.4.1.0\build\MaterialDesignThemes.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\MaterialDesignThemes.4.1.0\build\MaterialDesignThemes.targets'))" />
+  </Target>
+</Project>

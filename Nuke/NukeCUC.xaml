@@ -1,0 +1,36 @@
+﻿<UserControl x:Class="CSGOWPF.Nuke.NukeCUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:CSGOWPF.Nuke"
+             mc:Ignorable="d" Height="894" Width="1095">
+    <Grid>
+        <Button Content="Back" HorizontalAlignment="Left" Margin="10,854,0,0" VerticalAlignment="Top" Width="100" Click="Button_Click"/>
+        <TextBlock HorizontalAlignment="Left" Margin="350,10,0,0" TextWrapping="Wrap" Text="Dust2 Callouts" VerticalAlignment="Top" Width="146" Height="30"/>
+        <Button Content="Grenades" HorizontalAlignment="Left" Margin="10,20,0,0" VerticalAlignment="Top" Width="100" Click="Button_Click_1"/>
+        <Image Source="NukeMap1.jpg" Margin="201,131,-119,0" RenderTransformOrigin="0.511,0.501"/>
+        <Image Source="NukeMap2.png" Margin="10,131,790,511" RenderTransformOrigin="0.511,0.501"/>
+        <TextBlock HorizontalAlignment="Left" Height="26" Margin="719,335,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="104" FontSize="16" Foreground="White" FontFamily="Arial Rounded MT Bold" FontWeight="Bold" RenderTransformOrigin="1.75,3.538"><Run Text="HEADSHOT"/><LineBreak/><Run/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="26" Margin="733,413,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="104" FontSize="16" Foreground="White" FontFamily="Arial Rounded MT Bold" FontWeight="Bold" RenderTransformOrigin="1.75,3.538" Text="RAMP"/>
+        <TextBlock HorizontalAlignment="Left" Height="26" Margin="681,602,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="47" FontSize="16" Foreground="White" FontFamily="Arial Rounded MT Bold" FontWeight="Bold" RenderTransformOrigin="1.75,3.538" Text="SILO"/>
+        <TextBlock HorizontalAlignment="Left" Height="26" Margin="744,664,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="104" FontSize="16" Foreground="White" FontFamily="Arial Rounded MT Bold" FontWeight="Bold" RenderTransformOrigin="1.75,3.538" Text="T RED"/>
+        <TextBlock HorizontalAlignment="Left" Height="26" Margin="660,561,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="104" FontSize="16" Foreground="White" FontFamily="Arial Rounded MT Bold" FontWeight="Bold" RenderTransformOrigin="1.75,3.538" Text="SQUEAKY"/>
+        <TextBlock HorizontalAlignment="Left" Height="26" Margin="660,530,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="104" FontSize="16" Foreground="White" FontFamily="Arial Rounded MT Bold" FontWeight="Bold" RenderTransformOrigin="1.75,3.538" Text="LOBBY"/>
+        <TextBlock HorizontalAlignment="Left" Height="13" Margin="660,494,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="38" Foreground="White" FontFamily="Arial Rounded MT Bold" FontWeight="Bold" RenderTransformOrigin="1.75,3.538" Text="VENDING" FontSize="8"/>
+        <TextBlock HorizontalAlignment="Left" Height="21" Margin="679,440,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="49" Foreground="White" FontFamily="Arial Rounded MT Bold" FontWeight="Bold" RenderTransformOrigin="1.75,3.538" Text="CONTROL" FontSize="8"/>
+        <TextBlock HorizontalAlignment="Left" Height="21" Margin="692,475,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="49" Foreground="White" FontFamily="Arial Rounded MT Bold" FontWeight="Bold" RenderTransformOrigin="1.75,3.538" Text="TROPHY" FontSize="8"/>
+        <TextBlock HorizontalAlignment="Left" Height="26" Margin="744,602,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="104" FontSize="16" Foreground="White" FontFamily="Arial Rounded MT Bold" FontWeight="Bold" RenderTransformOrigin="1.75,3.538" Text="MAIN"/>
+        <TextBlock HorizontalAlignment="Left" Height="26" Margin="755,633,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="104" FontSize="16" Foreground="White" FontFamily="Arial Rounded MT Bold" FontWeight="Bold" RenderTransformOrigin="1.75,3.538" Text="OUTSIDE"/>
+        <TextBlock HorizontalAlignment="Left" Height="26" Margin="848,633,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="104" FontSize="16" Foreground="White" FontFamily="Arial Rounded MT Bold" FontWeight="Bold" RenderTransformOrigin="1.75,3.538" Text="GARAGE"/>
+        <TextBlock HorizontalAlignment="Left" Height="26" Margin="822,690,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="104" FontSize="16" Foreground="White" FontFamily="Arial Rounded MT Bold" FontWeight="Bold" RenderTransformOrigin="1.75,3.538" Text="SECRET"/>
+        <TextBlock HorizontalAlignment="Left" Height="26" Margin="793,470,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="104" FontSize="16" Foreground="White" FontFamily="Arial Rounded MT Bold" FontWeight="Bold" RenderTransformOrigin="1.75,3.538" Text="HEAVEN"/>
+        <TextBlock HorizontalAlignment="Left" Height="26" Margin="793,501,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="104" FontSize="16" Foreground="White" FontFamily="Arial Rounded MT Bold" FontWeight="Bold" RenderTransformOrigin="1.75,3.538" Text="LOCKERS"/>
+        <TextBlock HorizontalAlignment="Left" Height="26" Margin="733,587,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="47" FontSize="8" Foreground="White" FontFamily="Arial Rounded MT Bold" FontWeight="Bold" RenderTransformOrigin="1.75,3.538" Text="VENT"/>
+        <TextBlock HorizontalAlignment="Left" Height="26" Margin="862,515,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="104" FontSize="16" Foreground="White" FontFamily="Arial Rounded MT Bold" FontWeight="Bold" RenderTransformOrigin="1.75,3.538"><Run Text="CT BOX"/><LineBreak/><Run/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="21" Margin="731,362,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="49" Foreground="White" FontFamily="Arial Rounded MT Bold" FontWeight="Bold" RenderTransformOrigin="1.75,3.538" FontSize="8"><Run Text="BIG BOX"/><LineBreak/><Run/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="26" Margin="805,598,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="104" FontSize="16" Foreground="White" FontFamily="Arial Rounded MT Bold" FontWeight="Bold" RenderTransformOrigin="1.75,3.538" Text="CT RED"/>
+        <TextBlock HorizontalAlignment="Left" Height="21" Margin="726,541,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="49" Foreground="White" FontFamily="Arial Rounded MT Bold" FontWeight="Bold" RenderTransformOrigin="1.75,3.538" Text="HUT" FontSize="8"/>
+        <TextBlock HorizontalAlignment="Left" Height="21" Margin="744,548,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="49" Foreground="White" FontFamily="Arial Rounded MT Bold" FontWeight="Bold" RenderTransformOrigin="1.75,3.538" Text="TETRIS" FontSize="8"/>
+    </Grid>
+</UserControl>

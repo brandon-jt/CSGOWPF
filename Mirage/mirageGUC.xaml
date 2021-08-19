@@ -1,0 +1,98 @@
+﻿<UserControl x:Class="CSGOWPF.Mirage.mirageGUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:CSGOWPF.Mirage"
+             mc:Ignorable="d" 
+             d:DesignHeight="894" d:DesignWidth="1095">
+    <Grid>
+        <Button Content="Back" HorizontalAlignment="Left" Margin="10,854,0,0" VerticalAlignment="Top" Width="100" Click="Button_Click_Back" RenderTransformOrigin="0.328,17.688"/>
+        <TextBlock HorizontalAlignment="Left" Margin="350,10,0,0" TextWrapping="Wrap" Text="Mirage Grenades" VerticalAlignment="Top" Width="146" Height="30"/>
+        <Button Content="Callouts" HorizontalAlignment="Left" Margin="10,20,0,0" VerticalAlignment="Top" Width="100" Click="Button_Click"/>
+        <Image Source="MirageMap.jpg" Margin="10,10,-165,10" RenderTransformOrigin="0.511,0.501"/>
+
+        <Image x:Name="ImageHolder" HorizontalAlignment="Left" Height="364" Margin="10,179,0,0" VerticalAlignment="Top" Width="730"/>
+
+        <StackPanel Grid.ColumnSpan="2">
+            <ToggleButton x:Name="Smoke" Height="41" Margin="623,530,438,0" RenderTransformOrigin="0.809,0.459">
+                <ToggleButton.Template>
+                    <ControlTemplate TargetType="{x:Type ToggleButton}">
+                        <Image Source="/Mirage/Smokegrenadehud_csgo (1).png"/>
+                    </ControlTemplate>
+                </ToggleButton.Template>
+            </ToggleButton>
+            <Popup IsOpen="{Binding IsChecked, ElementName=Smoke}" StaysOpen="False" PlacementTarget="{Binding ElementName=ImageHolder}" Height="700" Width="1000">
+                <Image Source = "/Mirage/Smokes/A-Cross-cropped.png"/>
+            </Popup>
+        </StackPanel>
+
+        <StackPanel Grid.ColumnSpan="2">
+            <ToggleButton x:Name="Smoke2" Height="41" Margin="774,537,287,0" RenderTransformOrigin="0.809,0.459">
+                <ToggleButton.Template>
+                    <ControlTemplate TargetType="{x:Type ToggleButton}">
+                        <Image Source="/Mirage/Smokegrenadehud_csgo (1).png"/>
+                    </ControlTemplate>
+                </ToggleButton.Template>
+            </ToggleButton>
+            <Popup IsOpen="{Binding IsChecked, ElementName=Smoke2}" StaysOpen="False" PlacementTarget="{Binding ElementName=ImageHolder}" Height="700" Width="1000">
+                <Image Source = "/Mirage/Smokes/A-Ramp-cropped.png"/>
+            </Popup>
+        </StackPanel>
+
+        <StackPanel Grid.ColumnSpan="2">
+            <ToggleButton x:Name="Smoke3" Height="41" Margin="459,145,602,0" RenderTransformOrigin="0.809,0.459">
+                <ToggleButton.Template>
+                    <ControlTemplate TargetType="{x:Type ToggleButton}">
+                        <Image Source="/Mirage/Smokegrenadehud_csgo (1).png"/>
+                    </ControlTemplate>
+                </ToggleButton.Template>
+            </ToggleButton>
+            <Popup IsOpen="{Binding IsChecked, ElementName=Smoke3}" StaysOpen="False" PlacementTarget="{Binding ElementName=ImageHolder}" Height="700" Width="1000">
+                <Image Source = "/Mirage/Smokes/B-Apartments-cropped.png"/>
+            </Popup>
+        </StackPanel>
+
+        <StackPanel Grid.ColumnSpan="2">
+            <ToggleButton x:Name="Smoke4" Height="41" Margin="396,145,665,0" RenderTransformOrigin="0.809,0.459">
+                <ToggleButton.Template>
+                    <ControlTemplate TargetType="{x:Type ToggleButton}">
+                        <Image Source="/Mirage/Smokegrenadehud_csgo (1).png"/>
+                    </ControlTemplate>
+                </ToggleButton.Template>
+            </ToggleButton>
+            <Popup IsOpen="{Binding IsChecked, ElementName=Smoke4}" StaysOpen="False" PlacementTarget="{Binding ElementName=ImageHolder}" Height="700" Width="1000">
+                <Image Source = "/Mirage/Smokes/Balcony-cropped.png"/>
+            </Popup>
+        </StackPanel>
+
+        <StackPanel Grid.ColumnSpan="2">
+            <ToggleButton x:Name="Smoke5" Height="41" Margin="711,345,350,0" RenderTransformOrigin="0.809,0.459">
+                <ToggleButton.Template>
+                    <ControlTemplate TargetType="{x:Type ToggleButton}">
+                        <Image Source="/Mirage/Smokegrenadehud_csgo (1).png"/>
+                    </ControlTemplate>
+                </ToggleButton.Template>
+            </ToggleButton>
+            <Popup IsOpen="{Binding IsChecked, ElementName=Smoke5}" StaysOpen="False" PlacementTarget="{Binding ElementName=ImageHolder}" Height="700" Width="1000">
+                <Image Source = "/Mirage/Smokes/Catwalk-cropped.png"/>
+            </Popup>
+        </StackPanel>
+
+        <StackPanel Grid.ColumnSpan="2">
+            <ToggleButton x:Name="Smoke6" Height="41" Margin="575,678,486,0" RenderTransformOrigin="0.809,0.459">
+                <ToggleButton.Template>
+                    <ControlTemplate TargetType="{x:Type ToggleButton}">
+                        <Image Source="/Mirage/Smokegrenadehud_csgo (1).png"/>
+                    </ControlTemplate>
+                </ToggleButton.Template>
+            </ToggleButton>
+            <Popup IsOpen="{Binding IsChecked, ElementName=Smoke6}" StaysOpen="False" PlacementTarget="{Binding ElementName=ImageHolder}" Height="700" Width="1000">
+                <Image Source = "/Mirage/Smokes/CTSpawn-cropped.png"/>
+            </Popup>
+        </StackPanel>
+
+
+    </Grid>
+    
+</UserControl>
