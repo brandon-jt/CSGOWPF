@@ -14,29 +14,9 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 
-// Dont use Margin!
-// Start adding the other smoke grenade icons and pictures and see how they line up 
-
-//Popup?
-// Try using popups on mirage 
-// Make a button to remove the popup, the main point of this is to have an iamge up to be able to see where to smoke obviously
-
-// basically, have the popup appear on click/hover over, popup appears, along with back button.
-// Hit the back button, and it removes both the popup and the back button
-
-// The inferno GUC works for now, but I'd rather click the grenade icon then have a popup that stays and a back button
-
-// Look clickactions
-
 namespace CSGOWPF
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
-    /// 
-    
-    // Don't use NavigationService, that is only for pages
-    // Need to figure out way to pass reference of current window into functions
+   
     public partial class MainWindow : Window
     {
         
