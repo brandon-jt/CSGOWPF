@@ -43,33 +43,3 @@ namespace CSGOWPF
 }
 
 
-/*
- {
-    /// <summary>
-    /// Interaction logic for mirageUC.xaml
-    /// </summary>
-    public partial class mirageCUC : UserControl
-    {
-        object MainWindowContent;
-        public mirageCUC(object content)
-        {
-            InitializeComponent();
-            MainWindowContent = content;
-        }
-
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            this.Content = MainWindowContent;
-        }
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-            mirageGUC _mirageGUC = new mirageGUC(MainWindowContent, this.Content);
-            this.Content = _mirageGUC;
-        }
-    }
-} 
-  
- 
- */
